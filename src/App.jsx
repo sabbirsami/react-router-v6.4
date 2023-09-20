@@ -1,7 +1,10 @@
+import Home from "./Components/Home/Home";
+import "./Style.css";
+
 function App() {
     return (
         <>
-            <p>Hello</p>
+            <Home />
         </>
     );
 }
