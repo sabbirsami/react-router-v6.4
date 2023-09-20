@@ -19,3 +19,19 @@ nav ul li a {
     color: black;
     text-decoration: none;
 }
+
+/* user section  */
+.users-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.users-section .user {
+    border: 1px solid #000;
+    margin: 15px;
+    padding: 15px;
+}
+.users-section .user button {
+    width: 100%;
+    padding: 15px;
+    border-radius: none;
+}
