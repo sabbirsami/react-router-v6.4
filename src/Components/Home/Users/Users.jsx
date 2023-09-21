@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Users = () => {
     const users = useLoaderData();
@@ -9,7 +9,9 @@ const Users = () => {
                     <h1>{user.name}</h1>
                     <p>{user.catchPhrase}</p>
                     <p>{user.company.catchPhrase}</p>
-                    <button>Details</button>
+                    <Link to={`/user/${user.id}`}>
+                        <button>Details</button>
+                    </Link>
                 </div>
             ))}
         </div>
